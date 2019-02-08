@@ -25,7 +25,7 @@ From [this blog post](https://blogs.msdn.microsoft.com/typescript/2018/08/27/typ
 - enums that span multiple declarations (i.e. enum merging)
 - legacy-style import/export syntax (i.e. `import foo = require(...)` and `export = foo`)
 
-Don't expect this list to grow.
+Also experimental TypeScript flag `emitDecoratorMetadata` which adds to Reflect Metadata API information about types ([see "Metadata" in docs](https://www.typescriptlang.org/docs/handbook/decorators.html)) also will not work, because Babel has no information about typings, it just removes them on compilation.
 
 ## I'm on RN < 0.57 or I definitely want to compile my TypeScript files using TypeScript and not Babel
 
